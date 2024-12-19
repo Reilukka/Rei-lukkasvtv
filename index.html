@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Streaming Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    video {
+      width: 80%;
+      max-width: 700px;
+      margin: 20px auto;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: #fff;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live Streaming Platform</h1>
+
+  <!-- Video para transmissor e espectadores -->
+  <video id="local-video" autoplay muted></video>
+  <video id="remote-video" autoplay></video>
+
+  <div id="controls">
+    <button id="start-stream">Start Streaming</button>
+    <button id="stop-stream" disabled>Stop Streaming</button>
+  </div>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>
